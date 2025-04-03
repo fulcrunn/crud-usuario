@@ -6,5 +6,10 @@ import { Component, Input} from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
+[x: string]: any;
   @Input() textButton: string ;
+
+  ImprimeConsole() { /* teste da função (click) */
+    console.log("Aqui");}
+
 }

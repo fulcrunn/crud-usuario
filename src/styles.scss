@@ -2,3 +2,32 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root { /*define as cores goblais, root é o seletor de nível mais alto*/
+    --cor_primaria: #7533a8; /*variáveis no CSS sempre começam com --*/
+    --cor_erro: #ac2828;
+    --cor_cinza: #747474;
+
+    /* Exemplo de uso
+    button {
+    background-color: var(--cor_primaria);
+    }
+    */
+}
+
+.c-primaria{color: var(--cor_primaria)}
+.c-error{color: var(--cor_erro)}
+.c-cinza{color: var(--cor_cinza)}
+/* Exemplos de uso
+<p class="c-primaria">Este texto tem a cor primária.</p>
+<p class="c-error">Este texto é de cor de erro.</p>
+<p class="c-cinza">Este texto é cinza.</p>
+*/
+
+.hover:hover{cursor: pointer;}
+/*hover define o comportamento do cursor sobre um elemento*/
+/*
+Classe .hover : Aplica o estilo a elementos específicos no HTML
+Pseudo-classe :hover : Faz com que o estilo seja acionado somente 
+               quando o mouse está sobre o elemento.
+*/

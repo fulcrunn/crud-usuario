@@ -1,0 +1,89 @@
+.area-login-background {
+    height: 100vh; /* Define altura como 100% da viewport */
+    width: 55%;
+    display: block;
+    float: left;
+    background-image: url('../../../imagens/background-login.png');
+    background-color: var(--cor_primaria);
+    background-size: contain; /* Ajusta o tamanho para ser proporcional */
+    background-position: center center; /* Centraliza melhor a imagem */
+    background-repeat: no-repeat;
+}
+
+.area-form {
+    height: 100vh; /* Igual ao fundo: altura da viewport */
+    width: 45%;
+    float: left;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 760px) {
+    .area-form {
+        width: 100%; /* A área do formulário ocupa toda a largura */
+    }
+
+    .area-login-background {
+        width: 100%; /* Fundo ajusta para caber na viewport menor */
+        background-size: cover; /* Preenche melhor em telas menores */
+    }
+}
+
+.titulo{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 7px;
+    color: var(--cor_primaria);
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+.subtitulo{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--cor_cinza);
+    margin: 0px 0px 30px 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.input-form{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #00000000; /*os 3 últimos dígitos deixa transparente*/
+    margin-bottom: 32px;
+    transition: 0.3s linear all;
+    box-shadow: inset 1px 1px 2px #babecc80, inset -1px -1px 2px #d8d8d8b0;
+    &:focus{ /*estilizar um elemento quando ele recebe foco*/
+        border: 1px solid var(--cor_primaria);
+        /*
+        O & é usado no SCSS para representar o elemento atual (o mesmo onde essa regra está sendo escrita).
+        O :focus é uma pseudo-classe que se aplica a elementos que estão em foco (por exemplo, campos de formulário 
+        quando o usuário clica ou navega até eles usando o teclado).
+        */
+    }
+}
+
+.footer{
+    position: absolute;
+    bottom: 4px;
+    color: var(--cor_primaria);
+    font-size: 10px;
+}
+
+.botao{
+    
+    border: none;
+    border-radius: 4px;
+    background-color: var(--cor_primaria);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+
+}
