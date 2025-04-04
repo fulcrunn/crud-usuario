@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ButtonComponent } from './components/button/button.component';
 import { LoginComponent } from './pages/login/login.component';
+import { InputFormComponent } from "./components/input-form/input-form.component";
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    InputFormComponent
+],
   providers: [
     provideAnimationsAsync()
   ],
