@@ -1,2 +1,2 @@
-<button class="botao-primario" (click)="ImprimeConsole()">{{textButton}}</button> <!-- chamo dentro do button.components.ts -->
+<button class="botao-primario" [ngClass]="{'w-100' : size === '100'}" (click)="ImprimeConsole()">{{textButton}}</button> <!-- chamo dentro do button.components.ts -->
 
