@@ -1,5 +1,5 @@
 .sidemenu{
-    width: 210px;
+    width: 210px; /*Largura da faixa roxa na lateral*/
     height: 100vh;
     min-height: 100vh;
     display: block;
@@ -11,7 +11,7 @@
 }
 
 .sidemenu ul{
-    padding: 0;
+    padding: 0; /*margem dos elementos da lista do menu*/
 }
 
 .sidemenu .logo{
@@ -21,9 +21,39 @@
 }
 
 .sidemenu li{
+    padding: 12px;
     font-size: 14px;
     font-weight: 500;
     color: #fafafa;
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: 0.3s;
+    mat-icon{
+        margin-right: 14px;/*distancia os icones do nome*/
+        font-size: 24px; /*tamanho do icone*/   
+    }
+    &:hover{
+        background: #e6e6e6;
+        cursor: pointer;
+        color: var(--cor_primaria);
+    } 
+}
+
+/*.sidemenu li:hover{
+    background: #e6e6e6;
+    cursor: pointer;
+    color: var(--cor_primaria);
+}*/
+
+.sidemenu .logout{
+    position: absolute;
+    bottom: 10px;
+    width: 210px;
+    
+}
+
+.sidemenu a{
+    text-decoration: none; /*remove o riscado de link embaixo do texto*/
 }
