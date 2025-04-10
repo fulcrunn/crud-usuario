@@ -1,0 +1,29 @@
+.sidemenu{
+    width: 210px;
+    height: 100vh;
+    min-height: 100vh;
+    display: block;
+    float: left;
+    background-color: var(--cor_primaria);
+    padding: 10px 0px;
+    box-shadow: 4px 0px 10px 4px #0a0a0a30;
+    margin-right: 16px;
+}
+
+.sidemenu ul{
+    padding: 0;
+}
+
+.sidemenu .logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.sidemenu li{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+    margin: 0;
+    display: flex;
+}
